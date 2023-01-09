@@ -1,0 +1,19 @@
+[package]
+name = "msgexec-builder"
+version = "0.1.0"
+authors = ["keyleu <kleuyckx@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cosmwasm-schema = "1.1.9"
+cosmwasm-std = { version = "1.1.9" , features = ["stargate", "staking"] }
+cw2 = "1.0.1"
+protobuf = "3.2.0"
+schemars = "0.8.11"
+serde = { version = "1.0.152", default-features = false, features = ["derive"] }
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
